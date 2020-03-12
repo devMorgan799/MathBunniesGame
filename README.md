@@ -7,4 +7,4 @@
 
 
 ## Wireframe
-[wireframe](https://github.com/devMorgan799/MathBunniesGame/blob/master/images/bunny%20game.jpg)
+![wireframe](https://github.com/devMorgan799/MathBunniesGame/blob/master/images/bunny%20game.jpg)

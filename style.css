@@ -1,0 +1,16 @@
+@import "compass/css3";
+
+
+body {
+   background-image: url("https://media.giphy.com/media/YosGnHceAANP2/giphy.gif");
+   background-repeat: no-repeat; 
+    background-size: cover;   
+    
+   };
+
+   .rabbit {
+    width:5em;
+    height:3em;
+    background:#ffffff;
+    border-radius:70% 90% 60% 50%;
+   }
