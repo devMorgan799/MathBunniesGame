@@ -8,3 +8,11 @@
 
 ## Wireframe
 ![wireframe](https://github.com/devMorgan799/MathBunniesGame/blob/master/images/bunny%20game.jpg)
+
+// TIMELINE
+//  Thursday game functionality
+//  Friday game animation
+//  Saturday game animation
+//  Sunday put it together
+//  Monday get feedback
+//  Tuesday present
