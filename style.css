@@ -4,7 +4,8 @@
 body {
    background-image: url("https://media.giphy.com/media/YosGnHceAANP2/giphy.gif");
    background-repeat: no-repeat; 
-   background-size: 70%;
+   background-size: 99%;
+   background-color: rgb(2, 6, 7)
     
    };
 

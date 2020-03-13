@@ -3,13 +3,15 @@ console.log( "mathBunnies js is here");
 
 //part 1 initiate variable to be used in the game and math
 let sln;
-console.log(sln)
 let answer=0; 
-// answer.addeventlistener(checkAnswer());
 let points=0;
+document.getElementById("pointBox").innerHTML= "Points: "+points;
+
+
+
 
 function playGame () {
-        //Part a get the number
+        //Part A get the number
     let firstNum= random(0,10);
     let secondNum= random(1,10);
 
@@ -19,7 +21,7 @@ function playGame () {
     console.log(firstNum, secondNum);
     // document.getElementById("alert").innerHTML= "your firstnum= "+firstNum+"your secondnumb"+secondNum;
 
-    // part b get the operator
+    // part B get the operator
     let opArray = ["+","-", "*", "/"];
     let opIndex = random(0,3);
 
@@ -55,23 +57,39 @@ playGame();
 
 //part 2 check answer with solution. use this 
 //function to check the input answer to the solution
+//check input value
 
-answer = document.getElementById("answerBox").value;
+answer = document.getElementById("answerBox");
 console.log(answer)
-answer.onclick= checkAnswer;
+// answer.onclick= checkAnswer;
 
 function checkAnswer() {
 
-    if (answer == sln) {
+    if (answer.value == sln) {
         // answer.textContent= "NICE JOB!", <break>, "total points="
-        // // points += 1
+        points += 1
+        console.log("points", points)
+        document.getElementById("answerBox").value = "";
         console.log("NICE JOB!");
+        if (points == 10){
+            console.log("congrats you won!");
+            document.getElementById("youWonBox").innerHTML= "Points: "+points
+        }
+        
     } else {
         // answer.textContent= "Try again."
+        document.getElementById("answerBox").value = ""
         console.log("try again");
     }
 }
 
 //Start game connected to function
 let start = document.getElementById("startButton"); 
-start.onclick= playGame;
+// start.onclick= playGame;
+
+
+
+
+
+// // Bunny's back box
+// document.getElementById("bunnysBackFxn").innerHTML= "find the solution to:"+
