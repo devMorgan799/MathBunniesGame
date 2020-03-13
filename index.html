@@ -6,10 +6,33 @@
 </head>
 <body>
     <div>
-        <div class= "rabbit"> </div>
-        <div class= "clouds"></div>
+        <input id = "answerBox" placeholder="Answer Here"></input>
+        <button value = 'send' id = "submit" onclick="checkAnswer()">Submit</button>
 
-        <script src="js/three.js"></script>
+
+        <!-- <input id = "startButton" placeholder="Answer Here"></input>
+        <button value = 'send' id = "submit" onclick="checkAnswer()">Submit</button>
+        <form action="/new.php">
+            Answer Here:<br>
+            <input type="text" name="answerBox">
+            <br>
+        </form>  -->
+
+    <!-- //this button could be used to show the points and an alert can show with 
+    // updated points and possibly which question they got correct and incorrect. 
+    codewars, the twosums, runtime, cracking the coding interview, divide and conquer 
+    algorithm -->
+
+        <button id= "startButton" onclick="playGame()">Start
+            <!-- <img src="https://www.tutorialspoint.com/html/images/html-mini-logo.jpg" -->
+               <!-- alt="Learn HTML" height="80" width="100"> -->
+         </button>
+
+         <br><br>
+
+         <div id="alert"> place here
+            //this div is for the user to see
+         </div>
         <script src= ./app.js ></script> </script>
     </div>
 </body>

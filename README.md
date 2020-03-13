@@ -16,3 +16,34 @@
 //  Sunday put it together
 //  Monday get feedback
 //  Tuesday present
+
+
+//Shoutout
+//Aleh with parallax
+//angel with fxns
+//olga with images
+
+//code
+//html code
+ <input id = "answerBox" placeholder="Answer Here"></input>
+        <button value = 'send' id = "submit" onclick="checkAnswer()">Submit</button>
+
+// JS
+
+answer = document.getElementById("answerBox").value;
+console.log(answer)
+answer.onclick= checkAnswer;
+
+function checkAnswer() {
+
+    if (answer == sln) {
+        // answer.textContent= "NICE JOB!", <break>, "total points="
+        // // points += 1
+        console.log("NICE JOB!");
+    } else {
+        // answer.textContent= "Try again."
+        console.log("try again");
+    }
+}
+
+
