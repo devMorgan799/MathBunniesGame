@@ -6,18 +6,17 @@ let sln;
 let answer=0; 
 let points=0;
 
+let firstNum= random(0,10);
+let secondNum= random(1,10);
 
-
-
+function random(min, max) {
+    return Math.floor(Math.random()* (max - min)+ min);
+}
 
 function playGame () {
-        //Part A get the number
-    let firstNum= random(0,10);
-    let secondNum= random(1,10);
-
-    function random(min, max) {
-        return Math.floor(Math.random()* (max - min)+ min);
-    }
+    //Part A get the number
+    
+   
     console.log(firstNum, secondNum);
     // document.getElementById("alert").innerHTML= "your firstnum= "+firstNum+"your secondnumb"+secondNum;
 
@@ -51,9 +50,10 @@ function playGame () {
             console.log(firstNum,operation,secondNum,"=",sln); //just to check data
             break;
     }
+    return [firstNum, secondNum, operation];
 }
 
-playGame();
+// const someting = playGame();
 
 //part 2 check answer with solution. use this 
 //function to check the input answer to the solution
@@ -74,7 +74,7 @@ function checkAnswer() {
         console.log("NICE JOB!");
         if (points == 10){
             console.log("congrats you won!");
-            document.getElementById("youWonBox").innerHTML= "Points: "+points
+            document.getElementById("youWonBox").innerHTML= "Good Job Math Bunny";
         }
         
     } else {
@@ -90,7 +90,6 @@ let start = document.getElementById("startButton");
 
 
 
-
-
-// // Bunny's back box
-// document.getElementById("bunnysBackFxn").innerHTML= "find the solution to:"+
+// Bunny's back box
+document.getElementById("bunnysBackFxn").innerHTML= "Find the solution to:"+firstNum; 
+console.log("I work", firstNum)
