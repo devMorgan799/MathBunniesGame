@@ -5,7 +5,7 @@ console.log( "mathBunnies js is here");
 let sln;
 let answer=0; 
 let points=0;
-document.getElementById("pointBox").innerHTML= "Points: "+points;
+
 
 
 
@@ -67,9 +67,10 @@ function checkAnswer() {
 
     if (answer.value == sln) {
         // answer.textContent= "NICE JOB!", <break>, "total points="
-        points += 1
-        console.log("points", points)
+        points += 1;
+        console.log("points", points);
         document.getElementById("answerBox").value = "";
+        document.getElementById("pointBox").innerHTML= "Points: "+points;
         console.log("NICE JOB!");
         if (points == 10){
             console.log("congrats you won!");
