@@ -5,8 +5,23 @@ body {
    background-image: url("https://media.giphy.com/media/YosGnHceAANP2/giphy.gif");
    background-repeat: no-repeat; 
    background-size: 99%;
-   background-color: rgb(2, 6, 7)
+   background-color: rgb(2, 6, 7);
+   z-index: -2;
     
-   };
+ };
+ .pic1 {
+      background-color:rgb(226, 19, 19); 
+      text-decoration: line-through;
+    /* background-image: url(./image/grassvector.png);
+     position: absolute;  */
+      /* left: 0px;
+      bottom: 0px;
+      z-index: -1;
+      width: 100%;  
+     
+ }
+
+
+
 
    
